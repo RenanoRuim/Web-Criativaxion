@@ -29,3 +29,5 @@ CSS3: Estilização avançada, Flexbox, animações personalizadas e variáveis 
 JavaScript (ES6+): Manipulação do DOM, eventos de clique e carregamento assíncrono de arquivos via API fetch.
 
 Google Fonts: Tipografias personalizadas (Audiowide e Press Start 2P).
+# Link para visualização do projeto:
+https://renanoruim.github.io/Web-Criativaxion/
