@@ -27,7 +27,7 @@
 }
 
 .container-3 {
-  background-image: url(./assets/images02.png);
+  background-image: url(./assets/Image02.png);
   background-size: cover;
   background-position: center;
   box-shadow: inset 6px 6px 13px 0px black;
@@ -173,7 +173,11 @@
   margin-top: 20px;
 }
 
-.section-3 > h1 {
+.section-3 > h1,
+h2,
+h3,
+h4,
+p {
   color: #ffffff;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
@@ -458,5 +462,162 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+/* ===================================================
+   RESPONSIVIDADE (MEDIA QUERIES PARA TELEMÓVEIS)
+   =================================================== */
+
+/* Ajustes para ecrãs de até 768px (Smartphones e Tablets pequenos) */
+@media screen and (max-width: 768px) {
+  /* --- HEADER / NAVEGAÇÃO --- */
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 15px;
+    position: relative; /* Desativa o sticky para não ocupar o ecrã pequeno inteiro */
+  }
+
+  .titulo-1 {
+    font-size: 24px;
+  }
+
+  .nav-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-1 > a {
+    height: 38px;
+    padding: 0 15px;
+    font-size: 9px;
+  }
+
+  /* --- SEÇÃO HERO (CONTAINER 1) --- */
+  .section-1 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 42px;
+  }
+
+  .main-title > span {
+    font-size: 48px;
+  }
+
+  .section-2 > button {
+    height: 60px;
+    padding: 0 20px;
+    font-size: 14px;
+    width: 100%; /* Botão ocupa a largura toda no telemóvel */
+    max-width: 320px;
+  }
+
+  .section-3 > h1,
+  .section-3 > h2,
+  .section-3 > h3,
+  .section-3 > h4,
+  .section-3 > p {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  /* --- SEÇÃO CARROSSEL & SOBRE (CONTAINER 2) --- */
+  .container-2 {
+    padding: 30px 0;
+  }
+
+  .titulo-2 > h1 {
+    font-size: 24px;
+  }
+
+  .carrossel {
+    margin: 30px auto;
+    width: 95%;
+  }
+
+  .card {
+    flex: 0 0 240px; /* Cartões um pouco mais estreitos */
+    height: 380px;
+  }
+
+  .image-carrossel {
+    height: 180px;
+  }
+
+  .card > p {
+    font-size: 16px;
+  }
+
+  .card > span {
+    font-size: 11px;
+  }
+
+  /* --- CONTAINER 3 / DESCRIÇÃO / EDITOR --- */
+  .header-container-3 h1,
+  .codigo-section h1 {
+    font-size: 24px;
+  }
+
+  .card-descricao {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .codigo-section {
+    width: 95%;
+    padding: 30px 15px;
+  }
+
+  .tecnologias {
+    gap: 15px;
+  }
+
+  .tecnologias button {
+    width: 70px;
+    height: 70px;
+  }
+
+  .tecnologias img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .editor pre {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  /* --- FOOTER --- */
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-descricao {
+    font-size: 11px;
+  }
+}
+
+/* Ajustes para telemóveis muito pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  .main-title > span {
+    font-size: 36px;
+  }
+
+  .nav-1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-1 > a {
+    width: 100%;
   }
 }
